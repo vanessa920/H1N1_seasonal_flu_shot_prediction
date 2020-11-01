@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+#import matplotlib.pyplot as plt
+#import seaborn as sns
 import pickle
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
@@ -90,7 +90,8 @@ st.sidebar.markdown("""
 uploaded_file = st.sidebar.file_uploader("Upload your CSV input file", type=["csv"])
 st.sidebar.subheader('Tool Input Parameters')
 if uploaded_file is not None:
-    input_df = pd.read_csv(uploaded_file)
+    df = pd.read_csv(uploaded_file)
+
 else:
     def user_input_feature():
         doctor_recc_h1n1 = st.sidebar.checkbox('H1N1 Vaccine Recommended by Doctor?')
@@ -105,6 +106,7 @@ else:
         opinion_seas_risk=st.sidebar.slider('Opinion: Is Seasonal Flu Risky?:', 0, 5, 5)
         opinion_seas_sick_from_vacc=st.sidebar.slider('Opinion: Seasonal Vaccine Makes You Sick?:', 0, 5, 4)
         opinion_seas_vacc_effective=st.sidebar.slider('Opinion: Is Seasonal Vaccine Effective?:', 0, 5, 3)
+
         data = {'doctor_recc_h1n1': doctor_recc_h1n1,
                 'doctor_recc_seasonal': doctor_recc_seasonal,
                 'seasonal_vaccine': seasonal_vaccine,
@@ -148,7 +150,7 @@ else:
     st.header("{:.0%}".format(prediction_proba_lr[0][1]))  #print "{:.0%}".format(1/3)
     #st.write(prediction_proba_ada[0][1])
     # st.subheader('User Input Parameters')
-    # st.write(df)
+    #st.write(df)
     # st.write("""
     # ![import_features]("Important Features/slide2.png")
     # """)
@@ -165,7 +167,7 @@ Feature Coefficient in Logistic Model
 # st.pyplot(feature_coef.Feature,use_container_width=True)
 
 from PIL import Image
-image_coef = Image.open('Important Features/Feature_Coeffient.jpg')
+image_coef = Image.open('img/Feature_Coeffient.jpg')
 st.image(image_coef,use_column_width=True)
 
 # image_rf = Image.open('Important Features/Features_in_rf.png')
@@ -204,6 +206,11 @@ digraph {
     Prediction -> Visualization
 }
 ''')
+
+st.markdown("""
+### [GitHub](https://github.com/vanessa920/H1N1_seasonal_flu_shot_prediction)
+### [LinkedIn](https://www.linkedin.com/in/vanessahu/)
+""")
 
 st.markdown("""
 ##### Copyright@VanessaHu
