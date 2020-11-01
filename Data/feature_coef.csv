@@ -1,0 +1,13 @@
+Feature,Coefficient
+seasonal_vaccine,1.994603648426964
+doctor_recc_h1n1,2.221215880625276
+doctor_recc_seasonal,-1.0529970588122486
+h1n1_concern,-0.08436955386268696
+h1n1_knowledge,0.039013202286953534
+health_worker,0.49809820062037524
+opinion_h1n1_risk,0.36705834085549743
+opinion_h1n1_sick_from_vacc,-0.005149009745327946
+opinion_h1n1_vacc_effective,0.6255080949515864
+opinion_seas_risk,-0.008981373646964863
+opinion_seas_sick_from_vacc,-0.05182779461435615
+opinion_seas_vacc_effective,-0.09867030268637103
