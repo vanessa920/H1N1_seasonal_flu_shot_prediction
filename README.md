@@ -4,6 +4,8 @@ Metis Project 3 Classification Supervised Learning
 
  Vanessa Hu
  
+ Video Presentation: https://youtu.be/0qnRbNc-7dc
+ 
  Flu Shot Learning: Predict H1N1 and Seasonal Flu Vaccines
  HOSTED BY DRIVENDATA: https://www.drivendata.org/competitions/66/flu-shot-learning/
  
