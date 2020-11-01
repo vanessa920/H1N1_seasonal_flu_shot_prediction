@@ -4,6 +4,8 @@ Metis Project 3 Classification Supervised Learning
 
  Vanessa Hu
  
+ APP DEMO: https://share.streamlit.io/vanessa920/h1n1_seasonal_flu_shot_prediction/main/streamlit_h1n1.py
+ 
  Video Presentation: https://youtu.be/0qnRbNc-7dc
  
  Tableau Workbook: https://public.tableau.com/profile/vanessa.hu#!/vizhome/ImportantFeatures/ImportantFeatures
