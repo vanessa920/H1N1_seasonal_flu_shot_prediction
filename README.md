@@ -1,4 +1,4 @@
-# H1N1_seasonal_flu_shot_prediction
+# H1N1_seasonal_flu_shot_prediction [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/vanessa920/h1n1_seasonal_flu_shot_prediction/main/streamlit_h1n1.py)
 
 Metis Project 3 Classification Supervised Learning
 
